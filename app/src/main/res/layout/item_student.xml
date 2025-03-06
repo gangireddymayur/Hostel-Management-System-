@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Checkbox for selection -->
+    <CheckBox
+        android:id="@+id/cb_select_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+         />
+
+    <!-- Container for student details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <!-- Student name -->
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Student contact -->
+        <TextView
+            android:id="@+id/tv_student_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Student department and roll -->
+        <TextView
+            android:id="@+id/tv_student_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSE - 101"
+            android:textAppearance="?attr/textAppearanceCaption" />
+    </LinearLayout>
+</LinearLayout>

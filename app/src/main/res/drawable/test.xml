@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="200dp"
+    android:viewportWidth="360"
+    android:viewportHeight="200">
+    <!-- Gradient Background -->
+    <path
+        android:fillColor="@color/teal_200"
+        android:pathData="M0,0 L360,0 L360,100 Q180,200 0,100 Z" />
+
+    <!-- Gradient Effect -->
+    <path
+        android:fillColor="@color/teal_200"
+        android:pathData="M0,0 L360,0 L360,90 Q180,190 0,90 Z"
+        android:fillAlpha="0.8" />
+</vector>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- For notifications -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Loginpage"
+        tools:targetApi="31">
+
+        <!-- Notification Service -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Other activities -->
+        <activity
+            android:name=".deletemult"
+            android:exported="false" />
+        <activity
+            android:name=".deletestudent"
+            android:exported="false" />
+        <activity
+            android:name=".addstudent"
+            android:exported="false" />
+        <activity
+            android:name=".modifystudent"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStudentWeek"
+            android:exported="false" />
+        <activity
+            android:name=".AdminStudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddMult"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDayPass"
+            android:exported="false" />
+        <activity
+            android:name=".AdminScreen"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Studentprofile"
+            android:exported="false" />
+        <activity
+            android:name=".StudentWeek"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDayPass"
+            android:exported="false" />
+        <activity
+            android:name=".StudentScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

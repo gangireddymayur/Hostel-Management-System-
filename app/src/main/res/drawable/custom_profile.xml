@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Head (Circle) -->
+    <path
+        android:fillColor="@color/teal_200"
+    android:pathData="M14,9a3,3 0,1 1,-6,0 3,3 0,0 1,6,0z" />
+
+    <!-- Body (Semi-Circle) -->
+    <path
+        android:fillColor="@color/teal_200"
+    android:pathData="M4,17c0,-3 4,-6 8,-6s8,3 8,6v2h-16z" />
+</vector>

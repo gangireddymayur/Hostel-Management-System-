@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- First Trash Can (Center, Reduced Size) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M15,10v8H9V10h6m-1.2-4.5h-3.6l-0.8,0.8H6v1.5h12V6.3h-2.7l-0.8,-0.8zM16.5,9H7.5v10c0,0.9 0.7,1.5 1.5,1.5h6c0.9,0 1.5,-0.7 1.5,-1.5V9z" />
+
+    <!-- Second Trash Can (Left, Reduced Size) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M13,10v8H7V10h6m-1.2-4.5h-3.6l-0.8,0.8H4v1.5h12V6.3h-2.7l-0.8,-0.8zM14.5,9H5.5v10c0,0.9 0.7,1.5 1.5,1.5h6c0.9,0 1.5,-0.7 1.5,-1.5V9z" />
+
+    <!-- Third Trash Can (Right, Reduced Size) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M17,10v8H11V10h6m-1.2-4.5h-3.6l-0.8,0.8H8v1.5h12V6.3h-2.7l-0.8,-0.8zM18.5,9H9.5v10c0,0.9 0.7,1.5 1.5,1.5h6c0.9,0 1.5,-0.7 1.5,-1.5V9z" />
+
+</vector>

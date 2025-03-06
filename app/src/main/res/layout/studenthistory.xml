@@ -1,0 +1,51 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Student Name -->
+        <TextView
+            android:id="@+id/studentNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Student Roll Number -->
+        <TextView
+            android:id="@+id/studentRollNumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll No: 12345"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Student Branch -->
+        <TextView
+            android:id="@+id/studentBranchTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch: Computer Science"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SPHN Hostal Management</string>
+    <string-array name="months">
+        <item>This Month</item>
+        <item>Last Month</item>
+        <item>Custom Range</item>
+    </string-array>
+        <string-array name="sections_array">
+            <item>All</item>
+            <item>Section A</item>
+            <item>Section B</item>
+            <item>Section C</item>
+        </string-array>
+
+</resources>

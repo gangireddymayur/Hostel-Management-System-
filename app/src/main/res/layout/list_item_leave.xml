@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- CardView for Personal Info Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#F0F0F0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: John Doe"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textColor="#212121"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/rollNumberTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Roll Number: 12345678"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="#424242"
+                    android:paddingBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: 9876543210"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="#424242"
+                    android:paddingBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/branchTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Branch: Computer Science"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="#424242"
+                    android:paddingBottom="12dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Date Info Section -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: 20-11-2024"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/dateOfLeaveTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave Date: 25-11-2024"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/reasonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason: Medical Emergency"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:paddingBottom="16dp" />
+
+        <!-- Action Buttons Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/acceptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Accept"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp"
+                android:layout_marginStart="8dp"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/rejectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Reject"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"
+                android:backgroundTint="#F44336"
+                android:textColor="@android:color/white"
+                android:elevation="2dp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
